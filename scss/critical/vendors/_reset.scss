@@ -1,3 +1,14 @@
+// Box model everything
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+// Eric Meyer Reset
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,26 +29,44 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+// Block all HTML5 elements because old browsers
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
+html {
+  font-size: 0.938em;
+}
+
 body {
-  line-height: 1;
+  background-color: $white;
+  font-family: $system;
+  font-weight: 400;
+  line-height: 1.45;
+  color: $grey-600;
 }
-ol, ul {
-  list-style: none;
+
+p {
+  margin-bottom: 1.3em;
 }
-blockquote, q {
-  quotes: none;
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small {font-size: 0.707em;}
