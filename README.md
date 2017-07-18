@@ -1,7 +1,7 @@
 # Hercules
 ##### A lightweight frontend framework
 
-### Set up
+## Set up
 
 Download and install node if you don't already have it:
 
@@ -37,10 +37,14 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 
 ---
 
-### File Directory
+## Directory Structure
 
-**Critical**
 
++-- Components
++-- Critical
+|   +-- Base
+|   +-- Vars
++-- Patterns
 
 
 
