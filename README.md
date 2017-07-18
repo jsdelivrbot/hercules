@@ -27,11 +27,6 @@ Clone this repo and run the following commands in the directory
 
 `npm install -g svgo`
 
-We use SVGO to optimize all SVG icons.
-Run the following command in your SVG directory to optimize.
-
-`svgo [icon-name].svg`
-
 ---
 
 
