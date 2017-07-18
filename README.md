@@ -1,4 +1,5 @@
-# Hercules Framework
+# Hercules
+##### A lightweight frontend framework
 
 ### Set up
 
