@@ -1,7 +1,6 @@
 // --- Import all settings and dependencies
-@import "critical/theme/index";
+@import "critical/vars/index";
 
 
 // --- Import all critical styles for the browser
-@import "critical/vendors/reset";
-@import "critical/vendors/grid";
+@import "critical/base/index";
