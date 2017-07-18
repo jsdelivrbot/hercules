@@ -39,12 +39,23 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 
 ## Directory Structure
 
-
-+-- Components
-+-- Critical
-|   +-- Base
-|   +-- Vars
-+-- Patterns
+```
+-- components
+|   -- accordion
+|   -- tabs
+|   -- modal
+-- critical
+|   -- base
+|       index
+|       -- reset
+|       -- grid
+|       -- typography
+|   -- vars
+|       index
+|       -- color
+|       -- type
+-- patterns
+```
 
 
 
