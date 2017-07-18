@@ -8,7 +8,7 @@ Download and install node if you don't already have it:
 https://nodejs.org/en/download/
 
 
-Clone this repo and install the following packages.
+Clone this repo and install the following packages:
 
 **1 - Node package manager**
 
@@ -26,6 +26,9 @@ Clone this repo and install the following packages.
 
 **4 - Critical CSS**
 
+What is critical css? Critical extracts & inlines critical-path (above-the-fold) CSS from HTML for faster rendering.
+
+
 `npm install --save critical`
 
 **5 - SVGO**
@@ -35,6 +38,10 @@ Clone this repo and install the following packages.
 ---
 
 ### File Directory
+
+**Critical**
+
+
 
 
 
