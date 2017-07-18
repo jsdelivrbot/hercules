@@ -8,29 +8,33 @@ Download and install node if you don't already have it:
 https://nodejs.org/en/download/
 
 
-Clone this repo and run the following commands in the directory
+Clone this repo and install the following packages.
 
-**Installing Node package manager**
+**1 - Node package manager**
 
 `npm install npm@latest -g`
 
-**Install Gulp**
+**2 - Gulp**
 
 `npm install --global gulp-cli`
 
 `npm install --save-dev gulp`
 
-**Install SASS**
+**3 - SASS**
 
 `npm install gulp-sass --save-dev`
 
-**Install SVGO**
+**4 - Critical CSS**
+
+`npm install --save critical`
+
+**5 - SVGO**
 
 `npm install -g svgo`
 
 ---
 
-### File organization
+### File Directory
 
 
 
