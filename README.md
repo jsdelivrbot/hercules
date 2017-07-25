@@ -192,7 +192,7 @@ Developer must cross-reference each class they are changing to functional tests.
 Avoiding styling `.js` hooks as well. Instead rely on other classes to style your component.
 
 ```html
-<div class="list-menu js-toogle-menu"></div>
+<nav class="list-menu js-toggle-menu"></nav>
 ```
 
 ---
