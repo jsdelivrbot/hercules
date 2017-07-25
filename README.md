@@ -79,7 +79,7 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 
 # SCSS - BEM - OOSCSS
 
-We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Oriented Cascading Stylesheets)
+We use a loose mixture of BEM and OOSCSS
 
 ##### BEM with SCSS
 ```scss
@@ -95,6 +95,17 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 }
 ```
 
+#### BEM (Block Element Modifier)
+The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project.
+
+#### OOCSS
+Basically, a CSS “object” is a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS, and possibly JavaScript. That object can then be reused throughout a site.
+
+* Two Main Principles of OOCSS
+    * Separate structure and skin
+    * Separate container and content
+
+More on OOCSS: https://github.com/stubbornella/oocss/wiki
 
 ---
 
@@ -109,7 +120,6 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 
 ```scss
 .btn {
-  // styles
 
   &--small {
     padding: 15px 20px;
@@ -125,7 +135,7 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 ##### Bad
 ```scss
 .btn {
-  // styles
+
   &--SmallBtn {
     padding:15px20px;
   }
