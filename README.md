@@ -99,51 +99,50 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 ##### Formatting
 * Line break between each rule declaration
 * Dashes over camelCasing
-* Do not use ID selectors
 * Space after `:`
 * Use `//` for comments
 * Comments should be on their own lines above declarations
 
-##### Example
+##### Good
 
 ```scss
-    // -- Good
+.btn {
+  // styles
 
-    .btn {
-      // styles
+  &--small {
+    padding: 15px 20px;
+  }
 
-      &--small {
-        padding: 15px 20px;
-      }
+  &--circular,
+  &--radius {
+    border-radius: 50px;
+  }
+}
+```
 
-      &--circular,
-      &--radius {
-        border-radius: 50px;
-      }
-    }
+##### Bad
+```scss
+.btn {
+  // styles
+  &--SmallBtn {
+    padding:15px20px;
+  }
 
-    // -- Bad
-
-    .btn {
-
-      &--SmallBtn {
-        padding:15px20px;
-      }
-
-      &.Circular, &.radius {
-        padding:15px 20px;
-      }
-    }
+  &.Circular, &.radius {
+    padding:15px 20px;
+  }
+}
 
 
 ```
 
+---
 
 ##### Property ordering
 
 ```
 .class {
-    @   include / @extend
+    @include / @extend
     display / visibilty / opacity
     position / positioning - top, right, bottom, left
     clear / float / overflow
@@ -156,56 +155,50 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
     line-height/text-*
     content (for :before / :after only);
 
-    @media #{media-query} {
+    @media #{$media-query-range} {
         // same order as above
     }
 }
 
 ```
 
-##### Example
+##### Good
 
 ```scss
+.btn {
+   @include border-radius(50px);
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    background: $black;
+    margin: 20px;
+    padding: 20px;
+    color: $grey-500;
 
-    // -- Good
-
-    .btn {
-      @include border-radius(50px);
-      display: block;
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      bottom: 0;
-      left: 15px;
-      background: $black;
-      margin: 20px;
-      padding: 20px;
-      color: $grey-500;
-
-      @media #{$medium-up} {
-        display: none;
-      }
+    @media #{$medium-up} {
+      display: none;
     }
+}
+```
 
-    // -- Bad
-
-    .btn {
-      display: block;
-      top: 15px;
-      background: $black;
-      left: 15px;
-      right: 15px;
-      padding: 15px;
-      margin: 20px;
-      bottom: 0;
-      position: absolute;
-      color: #DDD;
-
-      @media #{$medium-up} {
-        display: none;
-      }
-
-      @include border-radius(50px);
+##### Bad
+```scss
+.btn {
+    display: block;
+    top: 15px;
+    background: $black;
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+    margin: 20px;
+    bottom: 0;
+    position: absolute;
+    color: #DDD;
+    @media #{$medium-up} {
+     display: none;
     }
-
+    @include border-radius(50px); }
 ```
