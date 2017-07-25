@@ -81,16 +81,16 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 
 We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Oriented Cascading Stylesheets)
 
-####Example of BEM in SCSS
+####BEM in SCSS
 ```scss
 
 // block
 .btn {
 
-  // element that depends on the block
+  // element  -- depends on the block
   &__primary { }
 
-  // modifiuer that changes the style of the block
+  // modifier -- changes the style of the block
   &--circular { }
 }
 ```
@@ -158,7 +158,7 @@ font-*
 line-height/text-*
 content (for :before / :after only);
 @media #{media-query} {
-    // same order as above sans @include/@extend as they are not supported.
+    // same order as above
 };
 ```
 
