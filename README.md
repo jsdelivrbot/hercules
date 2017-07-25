@@ -42,19 +42,27 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 ```
 -- components
 |   -- accordion
-|   -- tabs
+|   -- avatar
+|   -- banners
+|   -- buttons
+|   -- cards
+|   -- forms
 |   -- modal
+|   -- tables
+|   -- tabs
+-- patterns
+|   -- cards
+|   -- navigation
+|   -- collections
 -- critical
 |   -- base
-|       index
 |       -- reset
 |       -- grid
 |       -- typography
 |   -- vars
-|       index
 |       -- color
+|       -- icons
 |       -- type
--- patterns
 ```
 
 # Writing SCSS + HTML
