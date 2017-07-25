@@ -37,47 +37,7 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 
 ---
 
-# SCSS directory (WIP)
-
-```
--- components
-|   -- accordion
-|   -- avatars
-|   -- banners
-|   -- badgesr
-|   -- buttons
-|   -- cards
-|   -- coachmarks
-|   -- forms
-|   -- modals
-|   -- pagination
-|   -- tables
-|   -- tabs
-|   -- tooltips
-|   -- ""
--- patterns
-|   -- cards
-|   -- item tile
-|   -- navigation
-|   -- racks
-|   -- ""
--- critical
-|   -- base
-|       -- reset
-|       -- grid
-|       -- typography
-|   -- vars
-|       -- color
-|       -- icons
-|       -- media queries
-|       -- mixins / placeholder
-|       -- type
--- view
-|   -- view critical
-|   -- view nont critical
-```
-
-# SCSS - BEM - OOSCSS
+# SCSS + BEM + OOSCSS
 
 #### BEM (Block Element Modifier)
 The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project.
@@ -97,7 +57,7 @@ More on OOCSS: https://github.com/stubbornella/oocss/wiki
 
 ---
 
-### Writing HTML and SCSS
+### HTML and SCSS
 We use a loose mixture of BEM and OOCSS
 
 ##### BEM and SCSS
@@ -218,4 +178,76 @@ We use a loose mixture of BEM and OOCSS
      display: none;
     }
     @include border-radius(50px); }
+```
+
+---
+
+### Javascript
+
+Avoid binding to the same class in both your CSS and JS.
+Creating JavaScript-specific classes to bind to, prefixed with `.js-`
+
+Why? Conflating the two often leads to time wasted during refactoring.
+Developer must cross-reference each class they are changing to functional tests.
+Avoiding styling `.js` hooks as well. Instead rely on other classes to style your component.
+
+```html
+<div class="list-menu js-toogle-menu"></div>
+```
+
+---
+
+### Nesting
+
+---
+
+# SCSS directory
+We separate our directory by components, patterns, views, and critical styles.
+
+* Critical - This contain components, patterns, scss variables, and styles and are required to load or paint the page above the fold before anything else is loaded.
+    * Example:  The grid is critical because it controls 100% of our page layouts.
+* Components -  These pieces of UI can be stand alone or part of a larger whole.
+    * Example: Tooltips help users understand unknown or unfamiliar objects that aren’t described directly in the UI
+* Patterns are made up of several components
+    * Example: Rack - Rack UI are made up of several other components and patterns. We have product racks and thematic or editorial racks.
+* Views - These container page specific styles, components, and patterns. They are separated into view critical and non critical
+
+
+
+```
+-- components
+|   -- accordion
+|   -- avatars
+|   -- banners
+|   -- badgesr
+|   -- buttons
+|   -- cards
+|   -- coachmarks
+|   -- forms
+|   -- modals
+|   -- pagination
+|   -- tables
+|   -- tabs
+|   -- tooltips
+|   -- ""
+-- patterns
+|   -- cards
+|   -- item tile
+|   -- navigation
+|   -- racks
+|   -- ""
+-- critical
+|   -- base
+|       -- reset
+|       -- grid
+|       -- typography
+|   -- vars
+|       -- color
+|       -- icons
+|       -- media queries
+|       -- mixins / placeholder
+|       -- type
+-- view
+|   -- view critical
+|   -- view non critical
 ```
