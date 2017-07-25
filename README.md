@@ -83,12 +83,15 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 
 Example of BEM in SCSS
 ```scss
+
 // block
 .btn {
 
-  &__primary { } // element that depends on the block
-  
-  &--circuliar { } // modifiuer that changes the style of the block
+  // element that depends on the block
+  &__primary { }
+
+  // modifiuer that changes the style of the block
+  &--circuliar { }
 }
 ```
 
