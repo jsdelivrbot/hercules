@@ -96,6 +96,8 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 ```
 
 
+---
+
 ##### Formatting
 * Line break between each rule declaration
 * Dashes over camelCasing
