@@ -37,23 +37,27 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 
 ---
 
-# Directory Structure
+# SCSS directory structure (WIP)
 
 ```
 -- components
 |   -- accordion
-|   -- avatar
+|   -- avatars
 |   -- banners
 |   -- buttons
 |   -- cards
+|   -- coachmarks
 |   -- forms
-|   -- modal
+|   -- modals
+|   -- pagination
 |   -- tables
 |   -- tabs
+|   -- tooltips
 -- patterns
 |   -- cards
+|   -- item tile
 |   -- navigation
-|   -- collections
+|   -- racks
 -- critical
 |   -- base
 |       -- reset
@@ -67,6 +71,31 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 
 # Writing SCSS + HTML
 
+We use a loose mixture of BEM (Block Element Modifier) and OCSS (Object Oriented Cascading Stylesheets)
 
+Example of BEM in CSS
+```
+.button { } /* Block component */
+.button__primary {} /* Element that depends upon the block */
+.button--circular {} /* Modifier that changes the style of the block */
+```
 
+## SCSS property ordering
 
+```
+@include / @extend
+display / visibilty / opacity
+position
+clear / float / overflow
+background
+width / height
+margin / padding
+borderbox-*
+color
+font-*
+line-height/text-*
+content (for :before / :after only);
+@media #{media-query} {
+    // same order as above sans @include/@extend as they are not supported.
+};
+```
