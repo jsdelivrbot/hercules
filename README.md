@@ -91,16 +91,55 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
   &__primary { }
 
   // modifiuer that changes the style of the block
-  &--circuliar { }
+  &--circular { }
 }
 ```
 
 
 ####Formatting
-* Blank lines between rule declarations, even if classes are nested
+* Lines break between each rule declaration
 * Dashes over camelCasing
 * Do not use ID selectors
 * Space after `:`
+* Line break
+* Use `//` for comments
+* Comments should be on their own lines above declarations
+
+#####Example
+
+```scss
+    // -- Good
+
+    // global btn style
+
+    .btn {
+      // styles
+
+      &--small {
+        padding: 15px 20px;
+      }
+
+      &--circular,
+      &--radius {
+        border-radius: 50px;
+      }
+    }
+
+    // -- Bad
+
+    .btn {
+
+      &--SmallBtn {
+        padding:15px20px;
+      }
+
+      &.Circular, &.radius {
+        padding:15px 20px;
+      }
+    }
+
+
+```
 
 
 ####Property ordering
@@ -108,7 +147,7 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 ```
 @include / @extend
 display / visibilty / opacity
-position
+position - TRBL
 clear / float / overflow
 background
 width / height
@@ -121,4 +160,51 @@ content (for :before / :after only);
 @media #{media-query} {
     // same order as above sans @include/@extend as they are not supported.
 };
+```
+
+#####Example
+
+```scss
+
+    // -- Good
+
+    .btn {
+      @include border-radius(50px);
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      bottom: 0;
+      left: 15px;
+      background: $black;
+      margin: 20px;
+      padding: 20px;
+      color: $grey-500;
+
+      @media #{$medium-up} {
+        display: none;
+      }
+    }
+
+    // -- Bad
+
+    .btn {
+      display: block;
+      top: 15px;
+      background: $black;
+      left: 15px;
+      right: 15px;
+      padding: 15px;
+      margin: 20px;
+      bottom: 0;
+      position: absolute;
+      color: $grey;
+
+      @media #{$medium-up} {
+        display: none;
+      }
+
+      @include border-radius(50px);
+    }
+
 ```
