@@ -251,3 +251,7 @@ We separate our directory by components, patterns, views, and critical styles.
 |   -- view critical
 |   -- view non critical
 ```
+
+---
+
+# Style, Component, Pattern glossary
