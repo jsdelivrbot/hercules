@@ -142,21 +142,25 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 ##### Property ordering
 
 ```
-@include / @extend
-display / visibilty / opacity
-position - TRBL
-clear / float / overflow
-background
-width / height
-margin / padding
-borderbox-*
-color
-font-*
-line-height/text-*
-content (for :before / :after only);
-@media #{media-query} {
-    // same order as above
-};
+.class {
+    @   include / @extend
+    display / visibilty / opacity
+    position / positioning - top, right, bottom, left
+    clear / float / overflow
+    background
+    width / height
+    margin / padding
+    borderbox-*
+    color
+    font-*
+    line-height/text-*
+    content (for :before / :after only);
+
+    @media #{media-query} {
+        // same order as above
+    }
+}
+
 ```
 
 ##### Example
@@ -195,7 +199,7 @@ content (for :before / :after only);
       margin: 20px;
       bottom: 0;
       position: absolute;
-      color: $grey;
+      color: #DDD;
 
       @media #{$medium-up} {
         display: none;
