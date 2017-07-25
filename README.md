@@ -77,11 +77,11 @@ What is critical css? Critical extracts & inlines critical-path (above-the-fold)
 |   -- view nont critical
 ```
 
-# SCSS and BEM
+# SCSS - BEM - OOSCSS
 
 We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Oriented Cascading Stylesheets)
 
-####BEM in SCSS
+##### BEM with SCSS
 ```scss
 
 // block
@@ -96,21 +96,18 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 ```
 
 
-####Formatting
-* Lines break between each rule declaration
+##### Formatting
+* Line break between each rule declaration
 * Dashes over camelCasing
 * Do not use ID selectors
 * Space after `:`
-* Line break
 * Use `//` for comments
 * Comments should be on their own lines above declarations
 
-#####Example
+##### Example
 
 ```scss
     // -- Good
-
-    // global btn style
 
     .btn {
       // styles
@@ -142,7 +139,7 @@ We use a loose mixture of BEM (Block Element Modifier) and OO(S)CSS (Object Orie
 ```
 
 
-####Property ordering
+##### Property ordering
 
 ```
 @include / @extend
@@ -162,7 +159,7 @@ content (for :before / :after only);
 };
 ```
 
-#####Example
+##### Example
 
 ```scss
 
