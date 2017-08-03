@@ -1,3 +1,18 @@
+.btn-crumb span {
+  display: block;
+  height: 22px;
+  width: 22px; }
+  .btn-crumb span.white {
+    -webkit-filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+    filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); }
+  .btn-crumb span.grey {
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%); }
+
+.btn-crumb span {
+  background: url("/css/assets/ui-close-empty.svg");
+  background-size: 22px 22px; }
+
 *,
 *:before,
 *:after {
@@ -1055,3 +1070,19 @@ button::-moz-focus-inner {
   .btn-slab hr {
     border-top: 1px solid #BBBBBB;
     max-width: 25%; }
+
+.btn-crumb {
+  transition: all 300ms ease-out;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  background: #F2F3F5;
+  height: 25px;
+  margin: 0 0.5em 1em;
+  padding: 0 2em;
+  color: #1B1B1B;
+  font-size: 0.707em; }
+  .btn-crumb span {
+    position: absolute;
+    top: 2px;
+    right: 0; }
