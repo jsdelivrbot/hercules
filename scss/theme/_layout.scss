@@ -1,0 +1,63 @@
+// -- Theme Layout
+
+.herc-nav {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 3em;
+	width: 230px;
+	background: $black;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	ul {
+		margin: 0;
+		padding: 2em;
+		list-style: none;
+
+		li {
+
+			h6 {
+				color: $white;
+			}
+
+			a {
+				color: $grey-400;
+
+				&:hover, &.active {
+					color: $white;
+				}
+				&.active {
+					font-family: $sans-bold;
+				}
+			}
+		}
+	}
+}
+
+
+// -- Theme Container
+.herc-main {
+	position: relative;
+	padding-left: 250px;
+	padding-right: 15px;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.herc-panel {
+	margin-bottom: 2em;
+}
+
+
+h5 {
+	&.subtitle {
+		margin-bottom: 1em;
+	}
+}
+
+
+

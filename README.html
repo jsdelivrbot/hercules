@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="hercules">Hercules</h1>
+
+<h5 id="alightweightfrontendframework">A lightweight frontend framework</h5>
+
+<h1 id="setup">Set up</h1>
+
+<p>Download and install node if you don&#8217;t already have it:</p>
+
+<p>https://nodejs.org/en/download/</p>
+
+<p>Clone this repo and install the following packages:</p>
+
+<p><strong>1 - Node package manager</strong></p>
+
+<p><code>npm install npm@latest -g</code></p>
+
+<p><strong>2 - Gulp</strong></p>
+
+<p><code>npm install --global gulp-cli</code></p>
+
+<p><code>npm install --save-dev gulp</code></p>
+
+<p><strong>3 - SASS</strong></p>
+
+<p><code>npm install gulp-sass --save-dev</code></p>
+
+<p><strong>4 - Critical CSS</strong></p>
+
+<p>What is critical css? Critical extracts &amp; inlines critical-path (above-the-fold) CSS from HTML for faster rendering.</p>
+
+<p><code>npm install --save critical</code></p>
+
+<p><strong>5 - SVGO</strong></p>
+
+<p><code>npm install -g svgo</code></p>
+
+<hr />
+
+<h1 id="scssbemooscss">SCSS + BEM + OOSCSS</h1>
+
+<h4 id="bemblockelementmodifier">BEM (Block Element Modifier)</h4>
+
+<p>The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project.</p>
+
+<p>More on BEM: http://getbem.com/introduction/</p>
+
+<hr />
+
+<h4 id="oocss">OOCSS</h4>
+
+<p>Basically, a CSS “object” is a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS, and possibly JavaScript. That object can then be reused throughout a site.</p>
+
+<ul>
+<li>Two Main Principles of OOCSS
+
+<ul>
+<li>Separate structure and skin</li>
+<li>Separate container and content</li>
+</ul></li>
+</ul>
+
+<p>More on OOCSS: https://github.com/stubbornella/oocss/wiki</p>
+
+<hr />
+
+<h3 id="htmlandscss">HTML and SCSS</h3>
+
+<p>We use a loose mixture of BEM and OOCSS</p>
+
+<h5 id="bemandscss">BEM and SCSS</h5>
+
+<pre><code class="scss">
+// block
+.btn {
+
+  // element  -- depends on the block
+  &amp;__primary { }
+
+  // modifier -- changes the style of the block
+  &amp;--circular { }
+}
+</code></pre>
+
+<h5 id="formatting">Formatting</h5>
+
+<ul>
+<li>Line break between each rule declaration</li>
+<li>Dashes over camelCasing</li>
+<li>Space after <code>:</code></li>
+<li>Use <code>//</code> for comments</li>
+<li>Comments should be on their own lines above declarations</li>
+</ul>
+
+<h5 id="good">Good</h5>
+
+<pre><code class="scss">.btn {
+
+  &amp;--small {
+    padding: 15px 20px;
+  }
+
+  &amp;--circular,
+  &amp;--radius {
+    border-radius: 50px;
+  }
+}
+</code></pre>
+
+<h5 id="bad">Bad</h5>
+
+<pre><code class="scss">.btn {
+
+  &amp;--SmallBtn {
+    padding:15px20px;
+  }
+
+  &amp;.Circular, &amp;.radius {
+    padding:15px 20px;
+  }
+}
+
+
+</code></pre>
+
+<hr />
+
+<h5 id="propertyordering">Property ordering</h5>
+
+<pre><code>.class {
+    @include / @extend
+    display / visibilty / opacity
+    position / positioning - top, right, bottom, left
+    clear / float / overflow
+    background
+    width / height
+    margin / padding
+    borderbox-*
+    color
+    font-*
+    line-height/text-*
+    content (for :before / :after only);
+
+    @media #{$media-query-range} {
+        // same order as above
+    }
+}
+
+</code></pre>
+
+<h5 id="good">Good</h5>
+
+<pre><code class="scss">.btn {
+   @include border-radius(50px);
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    background: $black;
+    margin: 20px;
+    padding: 20px;
+    color: $grey-500;
+
+    @media #{$medium-up} {
+      display: none;
+    }
+}
+</code></pre>
+
+<h5 id="bad">Bad</h5>
+
+<pre><code class="scss">.btn {
+    display: block;
+    top: 15px;
+    background: $black;
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+    margin: 20px;
+    bottom: 0;
+    position: absolute;
+    color: #DDD;
+    @media #{$medium-up} {
+     display: none;
+    }
+    @include border-radius(50px); }
+</code></pre>
+
+<hr />
+
+<h3 id="javascript">Javascript</h3>
+
+<p>Avoid binding to the same class in both your CSS and JS.
+Creating JavaScript-specific classes to bind to, prefixed with <code>.js-</code></p>
+
+<p>Why? Conflating the two often leads to time wasted during refactoring.
+Developer must cross-reference each class they are changing to functional tests.
+Avoiding styling <code>.js</code> hooks as well. Instead rely on other classes to style your component.</p>
+
+<pre><code class="html">&lt;nav class=&quot;list-menu js-toggle-menu&quot;&gt;&lt;/nav&gt;
+</code></pre>
+
+<hr />
+
+<h3 id="nesting">Nesting</h3>
+
+<hr />
+
+<h1 id="scssdirectory">SCSS directory</h1>
+
+<p>We separate our directory by components, patterns, views, and critical styles.</p>
+
+<ul>
+<li>Critical - This contain components, patterns, scss variables, and styles and are required to load or paint the page above the fold before anything else is loaded.
+
+<ul>
+<li>Example: The grid is critical because it controls 100% of our page layouts.</li>
+</ul></li>
+<li>Components - These pieces of UI can be stand alone or part of a larger whole.
+
+<ul>
+<li>Example: Tooltips help users understand unknown or unfamiliar objects that aren’t described directly in the UI</li>
+</ul></li>
+<li>Patterns are made up of several components
+
+<ul>
+<li>Example: Rack - Rack UI are made up of several other components and patterns. We have product racks and thematic or editorial racks.</li>
+</ul></li>
+<li>Views - These container page specific styles, components, and patterns. They are separated into view critical and non critical</li>
+</ul>
+
+<pre><code>-- components
+|   -- accordion
+|   -- avatars
+|   -- banners
+|   -- badgesr
+|   -- buttons
+|   -- cards
+|   -- coachmarks
+|   -- forms
+|   -- modals
+|   -- pagination
+|   -- tables
+|   -- tabs
+|   -- tooltips
+-- patterns
+|   -- cards
+|   -- item tile
+|   -- navigation
+|   -- racks
+|   -- &quot;&quot;
+-- critical
+|   -- base
+|       -- reset
+|       -- grid
+|       -- typography
+|   -- vars
+|       -- color
+|       -- icons
+|       -- media queries
+|       -- mixins / placeholder
+|       -- type
+-- view
+|   -- view critical
+|   -- view non critical
+</code></pre>
+
+</body>
+</html>

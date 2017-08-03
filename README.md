@@ -229,7 +229,6 @@ We separate our directory by components, patterns, views, and critical styles.
 |   -- tables
 |   -- tabs
 |   -- tooltips
-|   -- ""
 -- patterns
 |   -- cards
 |   -- item tile
@@ -252,6 +251,3 @@ We separate our directory by components, patterns, views, and critical styles.
 |   -- view non critical
 ```
 
----
-
-# Style, Component, Pattern glossary

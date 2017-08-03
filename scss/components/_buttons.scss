@@ -1,0 +1,132 @@
+
+// --- Reset Buttons
+
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    @include box-sizing;
+}
+
+/* Reset `button` and button-style `input` default styles */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+ 	outline: 0;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+// -- Make `a` like a button
+[role="button"] {
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: pre;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+
+// -- Primary and Secondary button
+
+.btn {
+	@include single-transition;
+	display: inline;
+	background: $charcoal;
+	height: 45px;
+	margin: 0 0.5em 1em;
+	padding: 0 2em;
+	font-weight: 600;
+	color: $white;
+
+	&:hover {
+		@include single-transition;
+		background: $black;
+	}
+
+	// -- Hollow Button
+
+	&__hollow {
+		background: $white;
+		border: 1px solid $grey-400;
+		color: $grey-600;
+
+		&:hover {
+			background: $white;
+			border: 1px solid $black;
+			color: $black;
+		}
+	}
+
+	// -- Button Size
+
+	&--sml {
+		height: 35px;
+	}
+
+	&--lrg {
+		height: 55px;
+	}
+
+}
+
+// --- Slab Button
+
+.btn-slab {
+	@include single-transition;
+	display: inline;
+	min-height: 200px;
+	min-width: 200px;
+	margin: 0 0.5em 1em;
+	background: $white;
+	border: 1px solid $grey-400;
+	color: $grey-600;
+	cursor: pointer;
+	vertical-align: top;
+
+	&:hover {
+		@include single-transition;
+		background: $white;
+		border: 1px solid $black;
+		color: $black;
+	}
+
+	label {
+		display: block;
+		font-weight: 600;
+	}
+
+	span {
+		display: block;
+	}
+
+	hr {
+		border-top: 1px solid $grey-300;
+		max-width: 25%;
+	}
+
+}
+

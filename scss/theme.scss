@@ -1,7 +1,6 @@
 // --- Import all settings and dependencies
-@import "critical/mixins/index";
 @import "critical/vars/index";
 
 
 // --- Import all critical styles for the browser
-@import "critical/base/index";
+@import "theme/layout";
