@@ -4,213 +4,205 @@
 // uncomment for local
 $assetPath : "/css/assets";
 
+$background-size: 100%;
+
 
 // icon composition
 
 %ui-icon {
   display: block;
-  height: 22px;
-  width: 22px;
-
-  // need to work on colors
-  &.white { 
-      -webkit-filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
-              filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
-  }
-  &.grey { 
-      -webkit-filter: grayscale(80%);
-              filter: grayscale(80%);
-  }
+  height: 16px;
+  width: 16px;
 }
 
 %ui-arrow {
   background: url('#{$assetPath}/ui-arrow.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-bell {
   background: url('#{$assetPath}/ui-bell.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-checkmark-empty {
   background: url('#{$assetPath}/ui-checkmark-empty.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-checkmark-outline {
   background: url('#{$assetPath}/ui-checkmark-outline.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-checkmark {
   background: url('#{$assetPath}/ui-checkmark.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-circle-filled {
   background: url('#{$assetPath}/ui-circle-filled.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-circle-outline {
   background: url('#{$assetPath}/ui-circle-outline.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-close-empty {
   background: url('#{$assetPath}/ui-close-empty.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-close-outline {
   background: url('#{$assetPath}/ui-close-outline.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-close {
   background: url('#{$assetPath}/ui-close.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-color-wand {
   background: url('#{$assetPath}/ui-color-wand.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-email {
   background: url('#{$assetPath}/ui-email.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-eye {
   background: url('#{$assetPath}/ui-eye.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-facebook {
   background: url('#{$assetPath}/ui-facebook.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-flag-outline {
   background: url('#{$assetPath}/ui-flag-outline.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-flag {
   background: url('#{$assetPath}/ui-flag.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-gear {
   background: url('#{$assetPath}/ui-gear.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-heart {
   background: url('#{$assetPath}/ui-heart.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-heart-strong {
   background: url('#{$assetPath}/ui-heart-strong.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-image {
   background: url('#{$assetPath}/ui-image.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-info {
   background: url('#{$assetPath}/ui-info-circle.svg');
-  background-size: 22px 22px;
+  background-size: 100%;
 }
 
 %ui-info-outline {
   background: url('#{$assetPath}/ui-information-outline.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-instagram {
   background: url('#{$assetPath}/ui-instagram.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-location {
   background: url('#{$assetPath}/ui-location.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-locked-outline {
   background: url('#{$assetPath}/ui-locked-outline.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-locked {
   background: url('#{$assetPath}/ui-locked.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-minus-outline {
   background: url('#{$assetPath}/ui-minus-outline.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-minus {
   background: url('#{$assetPath}/ui-minus.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-more {
   background: url('#{$assetPath}/ui-more.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-plus-empty {
   background: url('#{$assetPath}/ui-plus-empty.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-plus-outline {
   background: url('#{$assetPath}/ui-plus-outline.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-plus {
   background: url('#{$assetPath}/ui-plus.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-pinterest {
   background: url('#{$assetPath}/ui-pinterest.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-search-strong {
   background: url('#{$assetPath}/ui-search-strong.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-search {
   background: url('#{$assetPath}/ui-search.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-settings-strong {
   background: url('#{$assetPath}/ui-settings-strong.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-settings {
   background: url('#{$assetPath}/ui-settings.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 %ui-twitter {
   background: url('#{$assetPath}/ui-twitter.svg');
-  background-size: 22px 22px;
+  background-size: $background-size;
 }
 
 // app badges
@@ -220,7 +212,7 @@ $assetPath : "/css/assets";
 //   height: 36px;
 //   width: 100px;
 //   background: url('#{$assetPath}/app-badge-ios.svg');
-//   background-size: 22px 22px;
+//   background-size: $background-size;
 // }
 
 // %ui-app-badge-android {
@@ -228,7 +220,7 @@ $assetPath : "/css/assets";
 //   height: 36px;
 //   width: 100px;
 //   background: url('#{$assetPath}/app-badge-android.svg');
-//   background-size: 22px 22px;
+//   background-size: $background-size;
 // }
 
 // branding 
@@ -236,7 +228,7 @@ $assetPath : "/css/assets";
 // %ui-logotype {
 //   display: block;
 //   background: url('#{$assetPath}/ui-branding-logotype.svg');
-//   background-size: 22px 22px;
+//   background-size: $background-size;
 
 //   &.white { 
 //     background: $white; 

@@ -1,9 +1,12 @@
-// Type vars
+// --- Private Variables
 
-$system: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+$proxima         : 'proximareg', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+$proxima-semi    : 'proximasemi', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+$source-code     : 'monaco', Consolas, monospace ;
+$system          : -apple-system, "HelveticaNeue", Helvetica, Arial, sans-serif;
 
-// -- Need to clean up
-$sans: $system;
-$sans-bold: $system;
+// --- Public Variables
 
-$headline: $system;
+$sans      : $proxima;
+$sans-bold : $proxima-semi;
+$mono      : $source-code;

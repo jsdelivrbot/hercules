@@ -1,5 +1,3 @@
-		</div><!-- end page wrap -->
-	</section>
 </section><!-- end herc main -->
 
 	<!-- Scripts -->

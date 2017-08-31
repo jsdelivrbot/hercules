@@ -1,6 +1,6 @@
 <?php
 
-	$pageTitle = "Buttons"; 
+	$pageTitle = "Avatars"; 
 
 ?>
 <?php include('../inc/head.php');?>
@@ -16,7 +16,7 @@
 <div class="herc-panel">
 	<div class="row">
 		<div class="small-12 column">
-			<h5 class="subtitle">Primary &mdash; Flat Button</h5>
+			<h5 class="subtitle">Flat &mdash; Primary</h5>
 		</div>
 		<div class="small-12 column">
 			<button class="btn btn--sml">Button</button>
@@ -29,7 +29,7 @@
 <div class="herc-panel">
 	<div class="row">
 		<div class="small-12 column">
-			<h5 class="subtitle">Secondary &mdash; Hollow Button</h5>
+			<h5 class="subtitle">Hollow &mdash; Secondary</h5>
 		</div>
 		<div class="small-12 column">
 			<button class="btn btn__hollow btn--sml">Button</button>
@@ -42,16 +42,16 @@
 <div class="herc-panel">
 	<div class="row">
 		<div class="small-12 column">
-			<h5 class="subtitle">UI &mdash; Slab</h5>
+			<h5 class="subtitle">Slab</h5>
 		</div>
 		<div class="small-12 column">
 			<button class="btn-slab">
-				<label>Button</label>
+				<label>Label</label>
 			</button>
 			<button class="btn-slab">
-				<label>Button</label>
+				<label>Label</label>
 				<hr>
-				<span>Label</span>
+				<span>Secondary Label</span>
 			</button>
 		</div>
 	</div>
@@ -61,7 +61,7 @@
 <div class="herc-panel">
 	<div class="row">
 		<div class="small-12 column">
-			<h5 class="subtitle">UI &mdash; Buttoncrumbs</h5>
+			<h5 class="subtitle">Breadcrumb</h5>
 		</div>
 		<div class="small-12 column">
 			<button class="btn-crumb">

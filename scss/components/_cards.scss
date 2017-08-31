@@ -1,0 +1,59 @@
+.card {
+
+	img {
+		position: relative;
+	}
+
+	h5 {
+		margin: 0;
+	}
+
+	a {
+		font-family: $sans;
+		color: $grey-400;
+
+		&:hover {
+			color: $black;
+		}
+	}
+
+	&__floating {
+		
+		img {
+			margin-bottom: 1em;
+		}
+	}
+
+	&__contained {
+	
+		div {
+			padding: 1em 1em 0.5em;
+			border: 1px solid $grey-200;
+			border-top: 0;
+		}	
+	}
+
+	&__overlay {
+		position: relative;
+
+		div {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 10;
+			background: rgba(0,0,0,0.65);
+			text-align: center;
+		}
+
+		h5 {
+			@include truncate;
+			position: relative;
+			top: 45%;
+			width: 90%;
+			margin: 0 auto;
+			color: $white;
+		}
+	}
+}
