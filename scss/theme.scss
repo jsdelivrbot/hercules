@@ -1,6 +1,9 @@
-// --- Import all settings and dependencies
+// --- Import all settings and dependencies that are not part of critical
+// --- The theme doesnt need everything
+
+@import "critical/mixins/index";
 @import "critical/vars/index";
 
 
 // --- Import all critical styles for the browser
-@import "theme/layout";
+@import "_theme/layout";

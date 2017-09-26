@@ -91,6 +91,10 @@ button::-moz-focus-inner {
 		height: 55px;
 	}
 
+	&--expand {
+		width: 100%;
+	}
+
 }
 
 // --- Slab Button
@@ -149,11 +153,10 @@ button::-moz-focus-inner {
 	}
 
 	span {
+		@include vertical-align();
 		@extend %ui-icon;
 		@extend %ui-close-empty;
-		position: absolute;
-		top: 2px;
-		right: 0;
+		right: 2px;
 	}
 }
 

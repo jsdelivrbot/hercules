@@ -1,16 +1,11 @@
-// --- Import all settings and dependencies
-@import "critical/mixins/index";
-@import "critical/vars/index";
-
-
 // --- Import all critical styles for the browser
-@import "critical/base/index";
+@import "critical/index";
 
 
 // --- All Componenets
 @import "components/accordions";
 @import "components/avatars";
 @import "components/cards";
-@import "components/tooltips";
+//@import "components/tooltips";
 
 

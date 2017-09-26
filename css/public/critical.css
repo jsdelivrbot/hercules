@@ -1,16 +1,3 @@
-.btn-crumb span, .has-tooltip i {
-  display: block;
-  height: 16px;
-  width: 16px; }
-
-.btn-crumb span {
-  background: url("/css/assets/ui-close-empty.svg");
-  background-size: 100%; }
-
-.has-tooltip i {
-  background: url("/css/assets/ui-info-circle.svg");
-  background-size: 100%; }
-
 *,
 *:before,
 *:after {
@@ -42,107 +29,35 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-@font-face {
-  font-family: 'proximasemi';
-  src: url("../fonts/proximasemi.eot");
-  src: url("../fonts/proximasemi.eot") format("embedded-opentype"), url("../fonts/proximasemi.woff2") format("woff2"), url("../fonts/proximasemi.woff") format("woff"), url("../fonts/proximasemi.ttf") format("truetype"), url("../fonts/proximasemi.svg#proximasemi") format("svg"); }
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
 
-@font-face {
-  font-family: 'proximareg';
-  src: url("../fonts/proximareg.eot");
-  src: url("../fonts/proximareg.eot") format("embedded-opentype"), url("../fonts/proximareg.woff2") format("woff2"), url("../fonts/proximareg.woff") format("woff"), url("../fonts/proximareg.ttf") format("truetype"), url("../fonts/proximareg.svg#proximareg") format("svg"); }
+hr {
+  border: 0;
+  border-top: 1px solid #E4E4E4; }
 
-html {
-  font-size: 0.938em; }
+.left {
+  float: left !important; }
 
-body {
-  background-color: #FFFFFF;
-  font-family: "proximareg", "HelveticaNeue", Helvetica, Arial, sans-serif;
-  line-height: 1.45;
-  color: #424242;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+.right {
+  float: right !important; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 1.414em 0 0.5em;
-  font-family: "proximasemi", "HelveticaNeue", Helvetica, Arial, sans-serif;
-  line-height: 1.2; }
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
 
-h1 {
-  margin-top: 0;
-  font-size: 3.998em; }
-  h1.small {
-    font-size: 3.2em; }
-  @media screen and (max-width: 50em) {
-    h1 {
-      color: blue;
-      font-size: 3em; }
-      h1.small {
-        font-size: 2.8em; } }
+.clearfix:after {
+  clear: both; }
 
-h2 {
-  font-size: 2.827em; }
-  h2.small {
-    font-size: 2.4em; }
-  @media screen and (max-width: 50em) {
-    h2 {
-      color: blue;
-      font-size: 2.3em; }
-      h2.small {
-        font-size: 2em; } }
+.hide {
+  display: none; }
 
-h3 {
-  font-size: 1.999em; }
-  h3.caps {
-    text-transform: uppercase;
-    letter-spacing: 0.15em; }
-  @media screen and (max-width: 50em) {
-    h3 {
-      color: blue; }
-      h3.caps {
-        text-transform: uppercase;
-        letter-spacing: 0.10em; } }
-
-h4 {
-  font-size: 1.414em; }
-  h4.caps {
-    text-transform: uppercase;
-    letter-spacing: 0.15em; }
-  @media screen and (max-width: 50em) {
-    h4 {
-      color: blue; }
-      h4.caps {
-        text-transform: uppercase;
-        letter-spacing: 0.10em; } }
-
-h5 {
-  font-size: 1em; }
-  h5.caps {
-    text-transform: uppercase;
-    letter-spacing: 0.15em; }
-
-h6 {
-  font-size: 0.867em; }
-
-a {
-  font-family: "proximasemi", "HelveticaNeue", Helvetica, Arial, sans-serif;
-  text-decoration: none; }
-
-p {
-  margin-bottom: 1.3em; }
-  @media screen and (max-width: 50em) {
-    p {
-      color: blue;
-      font-size: 1.1em; } }
-  p.large {
-    font-size: 1.15em; }
-
-strong,
-b {
-  font-family: "proximasemi", "HelveticaNeue", Helvetica, Arial, sans-serif; }
-
-small {
-  font-size: 0.707em; }
+.invisible {
+  visibility: hidden; }
 
 .row {
   margin: 0 auto;
@@ -959,168 +874,107 @@ small {
     right: 91.6666666667%;
     left: auto; } }
 
-img {
-  display: inline-block;
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  -ms-interpolation-mode: bicubic; }
+@font-face {
+  font-family: 'proximasemi';
+  src: url("../fonts/proximasemi.eot");
+  src: url("../fonts/proximasemi.eot") format("embedded-opentype"), url("../fonts/proximasemi.woff2") format("woff2"), url("../fonts/proximasemi.woff") format("woff"), url("../fonts/proximasemi.ttf") format("truetype"), url("../fonts/proximasemi.svg#proximasemi") format("svg"); }
 
-hr {
-  border: 0;
-  border-top: 1px solid #E4E4E4; }
+@font-face {
+  font-family: 'proximareg';
+  src: url("../fonts/proximareg.eot");
+  src: url("../fonts/proximareg.eot") format("embedded-opentype"), url("../fonts/proximareg.woff2") format("woff2"), url("../fonts/proximareg.woff") format("woff"), url("../fonts/proximareg.ttf") format("truetype"), url("../fonts/proximareg.svg#proximareg") format("svg"); }
 
-.left {
-  float: left !important; }
+html {
+  font-size: 0.938em; }
 
-.right {
-  float: right !important; }
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-.hide {
-  display: none; }
-
-.invisible {
-  visibility: hidden; }
-
-[role="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* Reset `button` and button-style `input` default styles */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  background: none;
-  border: 0;
-  color: inherit;
-  cursor: pointer;
-  font: inherit;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
-  outline: 0;
-  -webkit-appearance: button;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; }
-
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-[role="button"] {
-  color: inherit;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  white-space: pre;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; }
-
-.btn {
-  -webkit-transition: all;
-  -moz-transition: all;
-  -ms-transition: all;
-  -o-transition: all;
-  transition: all;
-  display: inline;
-  background: #2A272B;
-  height: 45px;
-  margin-bottom: 1em;
-  padding: 0 2em;
-  font-family: "proximasemi", "HelveticaNeue", Helvetica, Arial, sans-serif;
-  color: #FFFFFF; }
-  .btn:hover {
-    -webkit-transition: all;
-    -moz-transition: all;
-    -ms-transition: all;
-    -o-transition: all;
-    transition: all;
-    background: #111111; }
-  .btn__hollow {
-    background: #FFFFFF;
-    border: 1px solid #BBBBBB;
-    color: #424242; }
-    .btn__hollow:hover {
-      background: #FFFFFF;
-      border: 1px solid #111111;
-      color: #111111; }
-  .btn--sml {
-    height: 35px; }
-  .btn--lrg {
-    height: 55px; }
-
-.btn-slab {
-  -webkit-transition: all;
-  -moz-transition: all;
-  -ms-transition: all;
-  -o-transition: all;
-  transition: all;
-  display: inline;
-  min-height: 200px;
-  min-width: 200px;
-  margin-bottom: 1em;
-  background: #FFFFFF;
-  border: 1px solid #BBBBBB;
+body {
+  background-color: #FFFFFF;
+  font-family: "proximareg", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  line-height: 1.45;
   color: #424242;
-  cursor: pointer;
-  vertical-align: top; }
-  .btn-slab:hover {
-    -webkit-transition: all;
-    -moz-transition: all;
-    -ms-transition: all;
-    -o-transition: all;
-    transition: all;
-    background: #FFFFFF;
-    border: 1px solid #111111;
-    color: #111111; }
-  .btn-slab label {
-    display: block;
-    font-family: "proximasemi", "HelveticaNeue", Helvetica, Arial, sans-serif; }
-  .btn-slab span {
-    display: block; }
-  .btn-slab hr {
-    border-top: 1px solid #BBBBBB;
-    max-width: 25%; }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-.btn-crumb {
-  -webkit-transition: all;
-  -moz-transition: all;
-  -ms-transition: all;
-  -o-transition: all;
-  transition: all;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  background: #F2F3F5;
-  height: 25px;
-  margin-bottom: 1em;
-  padding-right: 2em;
-  color: #1B1B1B;
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  font-family: "proximasemi", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  line-height: 1.2; }
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em; }
+  h1.small {
+    font-size: 3.2em; }
+  @media screen and (max-width: 50em) {
+    h1 {
+      color: blue;
+      font-size: 3em; }
+      h1.small {
+        font-size: 2.8em; } }
+
+h2 {
+  font-size: 2.827em; }
+  h2.small {
+    font-size: 2.4em; }
+  @media screen and (max-width: 50em) {
+    h2 {
+      color: blue;
+      font-size: 2.3em; }
+      h2.small {
+        font-size: 2em; } }
+
+h3 {
+  font-size: 1.999em; }
+  h3.caps {
+    text-transform: uppercase;
+    letter-spacing: 0.15em; }
+  @media screen and (max-width: 50em) {
+    h3 {
+      color: blue; }
+      h3.caps {
+        text-transform: uppercase;
+        letter-spacing: 0.10em; } }
+
+h4 {
+  font-size: 1.414em; }
+  h4.caps {
+    text-transform: uppercase;
+    letter-spacing: 0.15em; }
+  @media screen and (max-width: 50em) {
+    h4 {
+      color: blue; }
+      h4.caps {
+        text-transform: uppercase;
+        letter-spacing: 0.10em; } }
+
+h5 {
+  font-size: 1em; }
+  h5.caps {
+    text-transform: uppercase;
+    letter-spacing: 0.15em; }
+
+h6 {
+  font-size: 0.867em; }
+
+a {
+  font-family: "proximasemi", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  text-decoration: none; }
+
+p {
+  margin-bottom: 1.3em; }
+  @media screen and (max-width: 50em) {
+    p {
+      color: blue;
+      font-size: 1.1em; } }
+  p.large {
+    font-size: 1.15em; }
+
+strong,
+b {
+  font-family: "proximasemi", "HelveticaNeue", Helvetica, Arial, sans-serif; }
+
+small {
   font-size: 0.707em; }
-  .btn-crumb label {
-    display: block;
-    padding: 0 1em; }
-  .btn-crumb span {
-    position: absolute;
-    top: 2px;
-    right: 0; }
 
 .avatar {
   border-radius: 500px;
@@ -1227,96 +1081,3 @@ button::-moz-focus-inner {
     width: 90%;
     margin: 0 auto;
     color: #FFFFFF; }
-
-.has-tooltip {
-  position: relative;
-  overflow: visible; }
-  .has-tooltip:hover .tooltip, .has-tooltip:focus .tooltip {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(-50%, 0);
-    transition: visibility 0s linear 0s, opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s; }
-  .has-tooltip i {
-    display: inline-block;
-    position: relative;
-    top: 3px;
-    z-index: 1;
-    cursor: pointer; }
-
-.tooltip {
-  min-width: 10em;
-  padding: .5em .75em; }
-
-.tooltip-with-border {
-  position: absolute;
-  left: 50%;
-  bottom: 100%;
-  background-color: #111111;
-  margin-bottom: 0.75em;
-  font-size: 0.9em;
-  visibility: hidden;
-  opacity: 0;
-  transform: translate(-50%, 0.75em);
-  transition: visibility 0s linear 0.2s, opacity 0.2s ease-in 0s, transform 0.2s ease-in 0s;
-  pointer-events: none;
-  border: 0.05em solid #111111;
-  color: #FFFFFF; }
-  .tooltip-with-border::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-top: 0.7em solid #111111;
-    border-left: 0.7em solid transparent;
-    border-right: 0.7em solid transparent;
-    margin-left: -0.7em; }
-  .tooltip-with-border::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-top: 0.75em solid #111111;
-    border-left: 0.75em solid transparent;
-    border-right: 0.75em solid transparent;
-    margin-left: -0.75em; }
-
-.tooltip-without-border {
-  position: absolute;
-  left: 50%;
-  bottom: 100%;
-  background-color: #111111;
-  margin-bottom: 0.5em;
-  font-size: 0.9em;
-  visibility: hidden;
-  opacity: 0;
-  transform: translate(-50%, 0.5em);
-  transition: visibility 0s linear 0.2s, opacity 0.2s ease-in 0s, transform 0.2s ease-in 0s;
-  pointer-events: none;
-  border: 0 solid #111111;
-  color: #FFFFFF; }
-  .tooltip-without-border::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-top: 0.5em solid #111111;
-    border-left: 0.5em solid transparent;
-    border-right: 0.5em solid transparent;
-    margin-left: -0.5em; }
-  .tooltip-without-border::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-top: 0.5em solid #111111;
-    border-left: 0.5em solid transparent;
-    border-right: 0.5em solid transparent;
-    margin-left: -0.5em; }

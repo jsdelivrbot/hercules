@@ -14,7 +14,7 @@
 
 	ul {
 		margin: 0;
-		padding: 2em;
+		padding: 1em 2em;
 		list-style: none;
 
 		li {
@@ -27,11 +27,9 @@
 			a {
 				color: $grey-400;
 
-				&:hover, &.active {
-					color: $white;
-				}
+				&:hover, 
 				&.active {
-					font-family: $sans-bold;
+					color: $white;
 				}
 			}
 		}
@@ -47,6 +45,10 @@
 	height: 100vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
+
+	// @media #{$small-only} {
+	// 	padding-left: 0;
+	// }
 }
 
 .herc-panel {

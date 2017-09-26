@@ -27,6 +27,15 @@
 	</div>
 </div>
 
+<div class="small-12 medium-4 column">
+	<div>
+	    Tooltip &mdash; South
+	    <a href="#" class="has-tooltip">
+	        <i></i>
+	        <span class="tooltip tooltip-with-border" role="tooltip">This is the content of the tooltip</span>
+	    </a>
+	</div>
+</div>
 
 	
 

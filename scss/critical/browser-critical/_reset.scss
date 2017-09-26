@@ -36,23 +36,3 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-
-@font-face {
-  font-family: 'proximasemi';
-  src: url('../fonts/proximasemi.eot');
-  src: url('../fonts/proximasemi.eot') format('embedded-opentype'),
-  url('../fonts/proximasemi.woff2') format('woff2'),
-  url('../fonts/proximasemi.woff') format('woff'),
-  url('../fonts/proximasemi.ttf') format('truetype'),
-  url('../fonts/proximasemi.svg#proximasemi') format('svg');
-}
-
-@font-face {
-  font-family: 'proximareg';
-  src: url('../fonts/proximareg.eot');
-  src: url('../fonts/proximareg.eot') format('embedded-opentype'),
-  url('../fonts/proximareg.woff2') format('woff2'),
-  url('../fonts/proximareg.woff') format('woff'),
-  url('../fonts/proximareg.ttf') format('truetype'),
-  url('../fonts/proximareg.svg#proximareg') format('svg');
-}
