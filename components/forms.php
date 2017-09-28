@@ -23,6 +23,7 @@
   				<div class="field">
   					<label>Input</label>
   					<input type="text" tab-index="1"/>
+  					<small class="error">Something Went Wrong</small>
   				</div>
   				<div class="field">
   					<label>Email</label>

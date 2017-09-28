@@ -11,14 +11,30 @@ form {
 
 	label {
 
-		// Contextual tips
+		// --- Contextual tips
+		
 		span {
+			position: relative;
+			top: 3px;
 			float: right;
-			color: $grey-500;
+			color: $grey-400;
 			font-family: $sans;
-
+			font-size: 0.867em;
 		}
 	}
+
+	// --- Errors
+	
+	small {
+
+		&.error {
+			display: none;
+			font-family: $sans-bold;
+			color: $red-300;
+		}
+	}
+
+	// --- Generic Container
 
 	.field {
 		margin: 0.5em 0 1.25em;
