@@ -33,6 +33,10 @@
   					<label>Input <span>Hint</span></label>
   					<input type="text" tab-index="1"/>
   				</div>
+  				<div class="field field--footer">
+  					<button class="btn">Button</button>
+  					<button class="btn btn__hollow">Button</button>
+  				</div>
  			</fieldset>
 		</form>
 	</div>

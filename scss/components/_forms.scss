@@ -1,5 +1,14 @@
-// --- form reset can be found here: scss/critical/browser-critical/_form
+// --- Form reset can be found here: scss/critical/browser-critical/_form
 
+
+// ---- Contextual / Hint
+
+$hint-color: $grey-400;
+$hint-font: $sans;
+$hint-size: 0.867em;
+
+// --- Field Container
+$field-margin: 0.5em 0 1.25em;
 
 // --- Generic form make up
 
@@ -17,9 +26,9 @@ form {
 			position: relative;
 			top: 3px;
 			float: right;
-			color: $grey-400;
-			font-family: $sans;
-			font-size: 0.867em;
+			color: $hint-color;
+			font-family: $hint-font;
+			font-size: $hint-size;
 		}
 	}
 
@@ -37,10 +46,18 @@ form {
 	// --- Generic Container
 
 	.field {
-		margin: 0.5em 0 1.25em;
+		@include clearfix;
+		margin: $field-margin;
+
+		&--footer {
+
+			.btn {
+				float: right;
+				margin-left: 1em;
+			}
+
+		}
 	}
 
-	.footer {
-		
-	}
 }
+
