@@ -12,6 +12,10 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 
+	@media #{$small-only} {
+		left: -230px;
+	}
+
 	ul {
 		margin: 0;
 		padding: 1em 2em;
@@ -46,9 +50,9 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 
-	// @media #{$small-only} {
-	// 	padding-left: 0;
-	// }
+	@media #{$small-only} {
+		padding: 0;
+	}
 }
 
 .herc-panel {

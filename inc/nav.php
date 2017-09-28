@@ -18,5 +18,6 @@
 		<li><a href="/components/buttons.php">Buttons</a></li>
 		<li><a href="/components/cards.php">Cards</a></li>
 		<li><a href="/components/coachmarks.php">Coachmarks</a></li>
+		<li><a href="/components/forms.php">Forms</a></li>
 	</ul>
 </aside>

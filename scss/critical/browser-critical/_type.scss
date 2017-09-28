@@ -1,17 +1,3 @@
-// --- Private Variables
-
-$proxima         : 'proximareg', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-$proxima-semi    : 'proximasemi', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-$source-code     : 'monaco', Consolas, monospace ;
-$system          : -apple-system, "HelveticaNeue", Helvetica, Arial, sans-serif;
-
-// --- Public Variables
-
-$sans      : $proxima;
-$sans-bold : $proxima-semi;
-$mono      : $source-code;
-
-
 @font-face {
   font-family: 'proximasemi';
   src: url('../fonts/proximasemi.eot');
@@ -20,6 +6,7 @@ $mono      : $source-code;
   url('../fonts/proximasemi.woff') format('woff'),
   url('../fonts/proximasemi.ttf') format('truetype'),
   url('../fonts/proximasemi.svg#proximasemi') format('svg');
+  // font-display: auto; // future fallback when browsers support font-display
 }
 
 @font-face {
@@ -30,6 +17,7 @@ $mono      : $source-code;
   url('../fonts/proximareg.woff') format('woff'),
   url('../fonts/proximareg.ttf') format('truetype'),
   url('../fonts/proximareg.svg#proximareg') format('svg');
+  // font-display: auto; // future fallback when browsers support font-display
 }
 
 
@@ -47,7 +35,14 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+// --- Headers
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
   margin: 1.414em 0 0.5em;
   font-family: $sans-bold;
   line-height: 1.2;
@@ -61,8 +56,7 @@ h1 {
     font-size: 3.2em;
   }
 
-  @media screen and (max-width: 50em) {
-    color: blue;
+  @media #{$small-only} {
     font-size: 3em;
 
     &.small {
@@ -78,8 +72,7 @@ h2 {
     font-size: 2.4em;
   }
 
-  @media screen and (max-width: 50em) {
-    color: blue;
+  @media #{$small-only} {
     font-size: 2.3em;
 
     &.small {
@@ -96,8 +89,7 @@ h3 {
     letter-spacing: 0.15em;
   }
 
-  @media screen and (max-width: 50em) {
-    color: blue;
+  @media #{$small-only} {
 
     &.caps {
       text-transform: uppercase;
@@ -114,8 +106,7 @@ h4 {
     letter-spacing: 0.15em;
   }
 
-  @media screen and (max-width: 50em) {
-    color: blue;
+  @media #{$small-only} {
 
     &.caps {
       text-transform: uppercase;
@@ -165,3 +156,6 @@ b {
 small { 
   font-size: 0.707em; 
 }
+
+
+

@@ -1,0 +1,30 @@
+// --- form reset can be found here: scss/critical/browser-critical/_form
+
+
+// --- Generic form make up
+
+form {
+
+	legend {
+		@extend h4;
+	}
+
+	label {
+
+		// Contextual tips
+		span {
+			float: right;
+			color: $grey-500;
+			font-family: $sans;
+
+		}
+	}
+
+	.field {
+		margin: 0.5em 0 1.25em;
+	}
+
+	.footer {
+		
+	}
+}

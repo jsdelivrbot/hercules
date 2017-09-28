@@ -1,0 +1,25 @@
+// --- Image
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%; 
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+
+// --- HR
+
+hr {
+  border: none;
+  border-top: 1px solid $grey-200;
+  margin: 1em 0 1.5em;
+}
+
+
+.clearfix { @include clearfix; }
+.hide { display: none; }
+.invisible { visibility: hidden; }
+.left { float: left !important; }
+.right { float: right !important; }
