@@ -205,6 +205,11 @@ $background-size: 100%;
   background-size: $background-size;
 }
 
+%ui-twitter-white {
+  background: url('#{$assetPath}/ui-twitter-white.svg');
+  background-size: $background-size;
+}
+
 // app badges
 
 // %ui-app-badge-ios {
