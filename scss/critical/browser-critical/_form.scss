@@ -39,6 +39,7 @@ label {
 
 // --- Text Inputs
 
+select,
 input,
 input[type=date],
 input[type=datetime],
@@ -112,8 +113,7 @@ textarea {
 /* Selects
 -----------------------------------------------*/
 
-select
-{
+select {
 
 }
 

@@ -44,8 +44,7 @@
 // -- Theme Container
 .herc-main {
 	position: relative;
-	padding-left: 250px;
-	padding-right: 15px;
+	padding: 0 15px 250px 250px;
 	height: 100vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -56,7 +55,8 @@
 }
 
 .herc-panel {
-	margin-bottom: 2em;
+	border-bottom: 1px solid $grey-200;
+	padding: 2em 0;
 }
 
 
@@ -66,5 +66,16 @@ h5 {
 	}
 }
 
+
+// --- Code Examples
+pre {
+	@include border-radius(5px);
+	background: $grey-100;
+	border: 1px solid $grey-100 !important;
+	padding: 1em !important;
+	padding-bottom: 0 !important;
+	overflow: hidden !important;
+	overflow-x: scroll !important;
+}
 
 

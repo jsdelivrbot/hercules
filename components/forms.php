@@ -33,6 +33,15 @@
   					<label>Input <span>Hint</span></label>
   					<input type="text" tab-index="1"/>
   				</div>
+  				  <div class="field">
+  					<label>Input <span>Hint</span></label>
+  					<select>
+  						<option>Proxima Nova - Regular</option>
+  						<option>Proxima Nova - Semibold</option>
+  						<option>Miller Banner Roman</option>
+  						<option>Miller Banner Roman Italics</option>
+  					</select>
+  				</div>
   				<div class="field field--footer">
   					<button class="btn">Button</button>
   					<button class="btn btn__hollow">Button</button>
