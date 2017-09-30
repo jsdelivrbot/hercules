@@ -112,6 +112,7 @@ button::-moz-focus-inner {
 
 	// -- Disabled
 
+	&:disabled,
 	&--disabled {
 		background: $grey-200;
 		color: $grey-400;

@@ -20,7 +20,7 @@
                     <button class="btn">Default</button>
                     <button class="btn btn--lrg">Large</button>
                     <button class="btn btn--lrg btn--expand">Expand</button>
-                    <button class="btn btn--disabled">Disabled</button>
+                    <button class="btn" disabled>Disabled</button>
                 </div>
                 <div class="small-12 medium-6 column">
                 	<h5 class="subtitle">Example</h5>
@@ -29,8 +29,7 @@
 &lt;button class=&quot;btn&quot;&gt;Default&lt;/button&gt;
 &lt;button class=&quot;btn btn--lrg&quot;&gt;Large&lt;/button&gt;
 &lt;button class=&quot;btn btn--lrg btn--expand&quot;&gt;Expand&lt;/button&gt;
-&lt;button class=&quot;btn btn--disabled&quot;&gt;Disabled&lt;/button&gt;
-
+&lt;button class=&quot;btn&quot; disabled&gt;Disabled&lt;/button&gt;
 					</pre>
                 </div>
             </div>
@@ -44,7 +43,7 @@
                     <button class="btn btn__hollow">Default</button>
                     <button class="btn btn__hollow btn--lrg">Large</button>
                     <button class="btn btn__hollow btn--expand">Expand</button>
-                    <button class="btn btn--disabled">Disabled</button>
+                    <button class="btn" disabled>Disabled</button>
                 </div>
                 <div class="small-12 medium-6 column">
                 	 <h5 class="subtitle">Example</h5>
@@ -52,8 +51,8 @@
 &lt;button class=&quot;btn btn__hollow btn--sml&quot;&gt;Small&lt;/button&gt;
 &lt;button class=&quot;btn btn__hollow&quot;&gt;Default&lt;/button&gt;
 &lt;button class=&quot;btn btn__hollow btn--lrg&quot;&gt;Large&lt;/button&gt;
-&lt;button class=&quot;btn btn__hollow btn--expand&quot;&gt;Expanded&lt;/button&gt;
-&lt;button class=&quot;btn btn--disabled&quot;&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;btn btn__hollow btn--expand&quot;&gt;Expand&lt;/button&gt;
+&lt;button class=&quot;btn&quot; disabled&gt;Disabled&lt;/button&gt;
 					</pre>
                 </div>
             </div>

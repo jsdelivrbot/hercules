@@ -6,7 +6,7 @@
 <!-- 		<li><a href="/style/type.php">Brand</a></li>
 		<li><a href="/style/type.php">Color</a></li>
 		<li><a href="/style/type.php">Icons</a></li> -->
-		<li><a <?php if ($pageTitle == "Type") echo "class=\"active\"" ;?> href="/style/type.php">Type</a></li>
+		<li><a <?php if ($pageTitle == "Typography") echo "class=\"active\"" ;?> href="/style/typography.php">Typography</a></li>
 	</ul>
 
 	<ul>

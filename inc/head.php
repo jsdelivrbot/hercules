@@ -19,6 +19,10 @@
     <title>Hercules &mdash; <?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="/css/public/critical.css" />
     <link rel="stylesheet" href="/css/public/theme.css" />
+
+    <!-- Vendors -->
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
 </head>
 <body>
 <?php include('nav.php');?>

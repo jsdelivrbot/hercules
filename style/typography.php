@@ -1,6 +1,6 @@
 <?php
 
-	$pageTitle = "Type"; 
+	$pageTitle = "Typography"; 
 
 ?>
 <?php include('../inc/head.php');?>
