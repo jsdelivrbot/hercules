@@ -49,13 +49,25 @@ form {
 		@include clearfix;
 		margin: $field-margin;
 
-		&--footer {
+		&--horizontal {
+			margin: 0;
 
+			input[type="checkbox"],
+			input[type="radio"] {
+			 	float: left;
+				margin-right: 0.5em;
+			}
+
+			label {
+				float: left;
+			}
+		}
+
+		&--footer {
 			.btn {
 				float: right;
 				margin-left: 1em;
 			}
-
 		}
 	}
 

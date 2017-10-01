@@ -40,6 +40,39 @@
   					 </select>
             </div>
   				</div>
+
+          <div class="fgroup">
+              
+
+              <label class="control checkbox">
+                <input type="checkbox">
+                <span class="control-indicator"></span>
+                Checkbox 1
+              </label>
+
+              <label class="control checkbox">
+                <input type="checkbox">
+                <span class="control-indicator"></span>
+                Checkbox 2
+              </label>
+
+              <label class="control radio">
+                <input id="radio1" name="radio" type="radio">
+                <span class="control-indicator"></span>
+                Radio 1
+              </label>
+              <label class="control radio">
+                <input id="radio2" name="radio" type="radio">
+                <span class="control-indicator"></span>
+                Radio 2
+              </label>
+
+          </div>
+
+          <div class="fgroup">
+            <label>Input</label>
+            <textarea></textarea>
+          </div>
           <div class="fgroup fgroup--footer">
   					<button class="btn">Button</button>
   					<button class="btn btn__hollow">Button</button>
