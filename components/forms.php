@@ -20,29 +20,27 @@
 		<form>			
 			 <fieldset>
   				<legend>Heading</legend>
-  				<div class="field">
+  				<div class="fgroup">
   					<label>Input</label>
   					<input type="text" tab-index="1"/>
   					<small class="error">Something Went Wrong</small>
   				</div>
-  				<div class="field">
-  					<label>Email</label>
-  					<input type="email" tab-index="2"/>
-  				</div>
-  				<div class="field">
+          <div class="fgroup">
   					<label>Input <span>Hint</span></label>
   					<input type="text" tab-index="1"/>
   				</div>
-  				  <div class="field">
-  					<label>Input <span>Hint</span></label>
-  					<select>
-  						<option>Proxima Nova - Regular</option>
-  						<option>Proxima Nova - Semibold</option>
-  						<option>Miller Banner Roman</option>
-  						<option>Miller Banner Roman Italics</option>
-  					</select>
+          <div class="fgroup">
+  					<label>Input</label>
+            <div class="select">
+  					 <select>
+  					 	<option>Proxima Nova - Regular</option>
+  					 	<option>Proxima Nova - Semibold</option>
+  					 	<option>Miller Banner Roman</option>
+  					 	<option>Miller Banner Roman Italics</option>
+  					 </select>
+            </div>
   				</div>
-  				<div class="field field--footer">
+          <div class="fgroup fgroup--footer">
   					<button class="btn">Button</button>
   					<button class="btn btn__hollow">Button</button>
   				</div>

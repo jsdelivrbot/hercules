@@ -45,7 +45,7 @@ form {
 
 	// --- Generic Container
 
-	.field {
+	.fgroup {
 		@include clearfix;
 		margin: $field-margin;
 

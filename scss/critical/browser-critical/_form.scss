@@ -3,10 +3,8 @@
 $input-border: 1px solid $grey-300;
 $input-border-focus: 1px solid $black;
 $input-height: 35px;
+$input-width: 100%;
 $input-padding: 0.5em; 
-
-
-
 
 
 // --- Reset form elements
@@ -20,12 +18,13 @@ textarea {
 	margin: 0;
 	border: 0;
 	padding: 0;
+	font-size: 1em;
+	line-height: 1;
 	vertical-align: middle;
 	white-space: normal;
-	line-height: 1;
 
 	&:focus {
-		outline:0;
+		outline: 0;
 	}
 }
 
@@ -55,14 +54,12 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week] {
-
 	display: block;
 	border:  $input-border;
 	height:  $input-height;
-	width: 100%;
+	width: $input-width;
 	padding: $input-padding;
 	font-family: $sans;
-	font-size: 1em;
 
 	&:focus {
 		border: $input-border-focus;
@@ -106,19 +103,103 @@ input[type=search]
 
 textarea {
 	min-height: 75px;
-	vertical-align:top;
-	overflow:auto;
+	vertical-align: top;
+	overflow: auto;
 }
 
 /* Selects
 -----------------------------------------------*/
 
-select {
+.select {
+	display: block;
+	position: relative;
+	width: $input-width;
+	border: $input-border;
 
-}
+	// -- Arrow
 
-select[multiple] 
-{
-	/* Move the label to the top */
-	vertical-align:top;
-}
+	&:after {
+		position: absolute;
+		top: 50%;
+		right: 1em;
+		display: inline-block;
+		content: "";
+		width: 0;
+		height: 0;
+		margin-top: -.15em;
+		pointer-events: none;
+		border-top: .30em solid;
+		border-right: .30em solid transparent;
+		border-bottom: .30em solid transparent;
+		border-left: .30em solid transparent;
+	}
+		  
+	select {
+		@include vendor-prefix(appearance, none);
+		display: inline-block;
+		background: $white;
+		background-image: none;
+		height: $input-height;
+		width: 100%;
+		margin: 0;
+		padding: $input-padding;
+		border: 0;
+		color: $grey-700;
+		cursor: pointer;
+		font-size: rem-calc(14px);
+		outline: 0;
+		
+		&:focus { 
+		  border: 0px solid $black;
+		}
+
+		&:active {
+			color: $white;
+			background-color: $white;
+		}
+
+		&:disabled {
+			color: $grey-300;
+		}
+
+		// -- Firefox
+		// -- Reset default style
+		// -- Do not remove or you will have ugly select elements on Firefox, dumb dumb
+
+		@-moz-document url-prefix() {
+		    -moz-appearance: none;
+    		text-indent: 0.01px;
+    		text-overflow: '';
+		}
+	}
+	
+	// IE 9
+	select::-ms-expand { 
+		display: none; 
+	}
+
+} // select
+
+
+	// @-moz-document url-prefix() {
+	//   // Firefox hack to hide the arrow
+	//   .select-style {
+	// 	-moz-appearance: menulist !important;
+	// 	&:after {
+	// 	  display : none;
+	// 	}
+	//   }
+	//   // .select-style select { text-indent: 0.01px; text-overflow: ''; padding-right: 1rem; }
+	//   // .select-style option { background-color: white; }
+	//   .field {
+	// 	&:nth-child(odd) {
+	// 	  clear: left;
+	// 	}
+	//   }
+	//   .field {
+	// 	&:nth-child(2n+1) {
+	// 	  clear: none;
+	// 	}
+	//   }
+
+	// }

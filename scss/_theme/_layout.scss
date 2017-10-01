@@ -29,7 +29,7 @@
 			}
 
 			a {
-				color: $grey-400;
+				color: $grey-500;
 
 				&:hover, 
 				&.active {
@@ -54,29 +54,17 @@
 	}
 }
 
-.herc-panel {
-	border-bottom: 1px solid $grey-200;
-	padding: 2em 0;
-}
 
-
-h5 {
-	&.subtitle {
-		margin-bottom: 1em;
-	}
-}
-
-.metrics {
+.herc-metric {
 
 	&__card {
 		display: block;
-		border: 1px solid $grey-200;
-		border-bottom: 1px solid $grey-300;
 		margin-bottom: 1em;
 		padding: 2em;
+		border: 1px solid $grey-200;
+		border-bottom: 1px solid $grey-300;
+		font-family: $sans-bold;
 	}
-
-
 }
 
 
@@ -94,4 +82,25 @@ pre {
 	font-size: 0.9em;
 }
 
+
+// -- Views
+
+.herc-panel {
+	border-bottom: 1px solid $grey-200;
+	padding: 2em 0;
+
+	// -- Typography
+	
+	&.type {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0.5em 0;
+		}
+	}
+}
 
