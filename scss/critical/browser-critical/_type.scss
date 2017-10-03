@@ -136,14 +136,14 @@ a {
 }
 
 p {
+  font-size: 1.15em;
   margin-bottom: 1.3em;
 
-  @media screen and (max-width: 50em) {
-    color: blue;
-    font-size: 1.1em;
+  @media #{$small-up} {
+    font-size: 1em;
   }
 
-  &.large {
+  &.lrg {
     font-size: 1.15em;
   }
 }
@@ -156,6 +156,9 @@ b {
 small { 
   font-size: 0.707em; 
 }
+
+
+
 
 
 

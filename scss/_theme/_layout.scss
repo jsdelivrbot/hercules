@@ -86,8 +86,11 @@ pre {
 // -- Views
 
 .herc-panel {
-	border-bottom: 1px solid $grey-200;
 	padding: 2em 0;
+
+	&.buttons {
+		border-bottom: 1px solid $grey-200;
+	}
 
 	// -- Typography
 	
@@ -98,7 +101,10 @@ pre {
 		h3,
 		h4,
 		h5,
-		h6 {
+		h6,
+		p 
+
+		{
 			margin: 0.5em 0;
 		}
 	}

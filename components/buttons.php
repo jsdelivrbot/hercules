@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="herc-panel">
+        <div class="herc-panel buttons">
             <div class="row">
                 <div class="small-12 medium-6 column">
                 	<h5 class="subtitle">Flat &mdash; Primary</h5>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="herc-panel">
+        <div class="herc-panel buttons">
             <div class="row">
                 <div class="small-12 medium-6 column">
                 	<h5 class="subtitle">Flat &mdash; Secondary</h5>
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div class="herc-panel">
+        <div class="herc-panel buttons">
             <div class="row">
                 <div class="small-12 medium-6 column">
                 	<h5 class="subtitle">Slab</h5>
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <div class="herc-panel">
+        <div class="herc-panel buttons">
             <div class="row">
                 <div class="small-12 medium-6 column">
                 	<h5 class="subtitle">Breadcrumb</h5>
@@ -118,7 +118,7 @@
         </div>
 
 
-        <div class="herc-panel">
+        <div class="herc-panel buttons">
             <div class="row">
                 <div class="small-12 medium-6 column">
                 	<h5 class="subtitle">Brand Buttons</h5>
